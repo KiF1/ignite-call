@@ -21,7 +21,7 @@ export default async function handle(req: NextApiRequest, res: NextApiResponse){
     return res.status(400).json({ message: 'User does not exist' })
   }
 
-  const referenceDate = dayjs(String(date))
+  const referenceDate = dayjs(String(date));
   const isPastDate = referenceDate.endOf('day').isBefore(new Date());
   if(isPastDate){
     return res.json({ possibleTimes: [], availability: [] })
@@ -54,7 +54,9 @@ export default async function handle(req: NextApiRequest, res: NextApiResponse){
       }
     })
   const availableTimes = possibleTimes.filter((time) => {
-    return !blockedTimes.some(blockedTime => blockedTime.date.getHours() == time)
+    const isTimeBlocked = blockedTimes.some(blockedTime => blockedTime.date.getHours() == time);
+    const isTimeInPast = referenceDate.set('hour', time).isBefore(new Date());
+    return !isTimeBlocked && !isTimeInPast;
   })
 
   return res.json({ possibleTimes, availableTimes })
