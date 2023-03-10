@@ -1,38 +1,20 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Ignite Call
 
-## Getting Started
+## Funcionalidades:
+- Criar um agendamento no google calendar, e nesse agendamento também criar automaticamente uma reunião com link no google meet e cadastrar esse agendamento no google calendar do usuário em que desejo agendar uma reunião.
 
-First, run the development server:
+## Descrição:
+- Esse é um projeto FullStack, onde utiliza do consumo de api do google calendar, onde tem a função de agendar uma reunião e além de agendar a reunião cria um link para a chamada no meet com o usuário que foi escolhido para participar da reunião.
+- No front-end utilizei Next.Js com o NextAth para trabalhar com a parte de autenticação e consumo de api com o google.
+- No back-end utilizei o servidor Node que gera o projeto Next.Js, e junto com o Node utilizei o Prisma.Orm para trabalhar com o PostgrSql como banco de dados.
+- Além dessas ferramentas, utilizei o zod para validação dos campos, como também nas informações recebidas no back-end.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Apresentação do Pojeto:
+<img src="./calendar.gif">
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
-
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
-
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## Gostou do meu projeto? :D Entre em contato comigo! 
+- [Linkedin](https://www.linkedin.com/in/abner-santos-b195b8228/) <br/>
+- [Email: abner.kif1@gmail.com](mailto:abner.kif1@gmail.com)
+- <img align="center" alt="React" src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB%22">
